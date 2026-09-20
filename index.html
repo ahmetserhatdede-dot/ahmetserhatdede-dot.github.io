@@ -27,17 +27,25 @@
 
     <h3>Java Example</h3>
 
+    <p>
+        This program demonstrates the difference between System.out.print()
+        and System.out.println().
+    </p>
+
     <pre>
 public class Printing
 {
     public static void main(String[] args)
     {
+        // Prints text and moves to the next line
         System.out.println("Hello world.");
         System.out.println("Another line");
 
+        // Prints both parts on the same line
         System.out.print("Print will add to ");
         System.out.print("the same line!");
 
+        // Prints text and then moves to a new line
         System.out.println(" New line after this!");
     }
 }
