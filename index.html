@@ -28,7 +28,7 @@
     <h3>Java Example</h3>
 
     <p>
-        This program is to demonstrate the difference between System.out.print()
+        This program demonstrates the difference between System.out.print()
         and System.out.println().
     </p>
 
@@ -72,7 +72,7 @@ Print will add to the same line! New line after this!
     <h2>September 20, 2026 - Unit 1 Review (Sections 1.1–1.9)</h2>
 
     <p>
-        These notes summarize the Java topics I studied in CSAwesome (runestone)
+        These notes summarize the Java topics I studied in CSAwesome (Runestone)
         from sections 1.1 to 1.9.
     </p>
 
@@ -80,13 +80,13 @@ Print will add to the same line! New line after this!
 
     <p>
         I learned the basic structure of a Java program, including classes
-        and the main method. I also learned a bit about syntax as well.
+        and the main method. I also learned more about Java syntax.
     </p>
 
     <h3>1.2 - Variables and Data Types</h3>
 
     <p>
-        I learned how to declare and "initialize" variables using data types
+        I learned how to declare and initialize variables using data types
         such as int, double, boolean, and String. I also practiced using
         camelCase variable names.
     </p>
@@ -103,16 +103,18 @@ Print will add to the same line! New line after this!
 
     <p>
         I learned how variable values can change while a program runs.
-        I practiced tracing variables, and
-        swapping values with a temporary variable.
+        I practiced tracing variables and swapping values with a temporary variable.
     </p>
 
     <h3>1.5 - Casting, Rounding, and Number Representation</h3>
 
     <p>
-        I learned how casting can conve (Casting = manually changing one data type into anotherrt values between data types.) -> (double) x
+        I learned that casting means manually changing one data type into another.
+        For example, (double) x can be used to treat x as a double.
         I also practiced rounding numbers, formatting decimal values,
-        and understanding integer limits and overflow. -> The max number which can be used in Java. If it is exceeded then we go to the smallest number (maxNumber + 1 = minNumber)
+        and understanding integer limits and overflow.
+        An int has a maximum and minimum value. If the maximum value is exceeded,
+        overflow can occur and the value can wrap around to the minimum value.
     </p>
 
     <h3>1.6 - Increment and Compound Assignment Operators</h3>
@@ -125,13 +127,16 @@ Print will add to the same line! New line after this!
     <h3>1.7 - Classes, Objects, Methods, and Libraries</h3>
 
     <p>
-        I learned that classes describe objects, objects can have attributes
-        and behaviors, and methods can be used to control objects. I also
-        learned how libraries and APIs allow programmers to use code written
-        by other programmers.
+        I learned that a class is like a blueprint for creating objects.
+        An object is an actual instance of a class. Objects can have attributes,
+        which store information about them, and methods, which are actions they
+        can perform. I also learned how libraries contain reusable code and APIs
+        explain how that code can be used.
+    </p>
 
-EXAMPLE: 
-        
+    <pre>
+Example:
+
 Class: Car
 
 Object:
@@ -146,31 +151,110 @@ Methods:
 drive()
 brake()
 turn()
-        
-    </p>
+    </pre>
 
     <h3>1.8 - Comments, Preconditions, and Postconditions</h3>
 
     <p>
         I learned how to write single-line, multi-line, and Java documentation
-        comments. I also learned what preconditions and postconditions (a condition that must be true after a method finishes)
-        when using methods.
+        comments. I also learned that a precondition is something that must be
+        true before a method runs, while a postcondition is something that should
+        be true after the method finishes.
     </p>
 
     <h3>1.9 - Methods, Parameters, and Arguments</h3>
 
     <p>
         I learned how methods help reduce repeated code and organize programs.
-        I also learned about method calls, method signatures (heading), parameters,
+        I also learned about method calls, method signatures, parameters,
         arguments, call by value, and method overloading.
+    </p>
+
+    <p>
+        A method call runs a method. A method signature contains the method name
+        and its parameter types. A parameter is a variable written in the method
+        definition, while an argument is the actual value passed into the method.
+        Call by value means Java passes a copy of a value into a method.
+        Method overloading means having multiple methods with the same name but
+        different parameter lists.
     </p>
 
     <h3>What I Learned</h3>
 
     <p>
-        After completing sections 1.1 through 1.9, it became easier to understand basic Java programs. I can now use variables,
-        operators, classes, objects, methods, parameters, arguments, comments,
-        APIs, and preconditions to some extend.
+        After completing sections 1.1 through 1.9, it became easier to understand
+        basic Java programs. I can now use variables, operators, classes, objects,
+        methods, parameters, arguments, comments, APIs, and preconditions
+        to some extent.
+    </p>
+
+    <hr>
+
+    <h2>September 21, 2026 - Project: Farmer Ryan</h2>
+
+    <h3>Project Description</h3>
+
+    <p>
+        In this project, I created a Java program that asks the user for the
+        number of beans in six different bags. The program stores each input
+        in a variable, adds all six values together, and prints the total number
+        of beans Farmer Ryan needs to plant.
+    </p>
+
+    <h3>Java Code</h3>
+
+    <pre>
+import java.util.Scanner;
+
+public class FarmerRyan
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("The amount of beans Nora has taken from the first bag is: ");
+        int bag1 = input.nextInt();
+
+        System.out.print("The amount of beans Nora has taken from the second bag is: ");
+        int bag2 = input.nextInt();
+
+        System.out.print("The amount of beans Nora has taken from the third bag is: ");
+        int bag3 = input.nextInt();
+
+        System.out.print("The amount of beans Nora has taken from the fourth bag is: ");
+        int bag4 = input.nextInt();
+
+        System.out.print("The amount of beans Nora has taken from the fifth bag is: ");
+        int bag5 = input.nextInt();
+
+        System.out.print("The amount of beans Nora has taken from the sixth bag is: ");
+        int bag6 = input.nextInt();
+
+        int total = bag1 + bag2 + bag3 + bag4 + bag5 + bag6;
+
+        System.out.println("Ryan has to plant " + total + " beans");
+    }
+}
+    </pre>
+
+    <h3>Sample Input</h3>
+
+    <pre>
+241 675 897 12 4354 7625
+    </pre>
+
+    <h3>Sample Output</h3>
+
+    <pre>
+Ryan has to plant 13804 beans
+    </pre>
+
+    <h3>What I Learned</h3>
+
+    <p>
+        I practiced using Scanner to take user input, storing integer values
+        in variables, adding multiple variables together, and printing a result
+        that combines text with a calculated value.
     </p>
 
 </body>
