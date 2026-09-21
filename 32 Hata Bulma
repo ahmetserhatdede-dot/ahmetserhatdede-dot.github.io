@@ -1,0 +1,124 @@
+<hr>
+
+<h2>September 21, 2026 - Debugging Project: Space Station</h2>
+
+<h3>Project Description</h3>
+
+<p>
+    In this project, I worked on a Java program that originally contained
+    32 errors. The goal was to identify and fix different types of errors
+    related to variables, data types, printing, casting, mathematical
+    operations, overflow, and methods from the Math class.
+</p>
+
+<h3>Java Code</h3>
+
+<pre>
+// SpaceStation.java
+// WARNING: This code currently contains exactly 32 errors and will not compile!
+// Task: Find the errors, fix them, and write a "// FIX:" comment above each fix.
+
+public class SpaceStation {
+    public static void main(String[] args) {
+        
+        System.out.println("=== SPACE STATION RECOVERY INITIATED ===\n");
+
+        // --- MODULE 1: VARIABLES, DATA TYPES & PRINTING (Errors 1-12) ---
+        System.out.println("[MODULE 1] Loading variables...");
+
+        int crewMembers = 12;
+        double fuelLevel = 4500.50;
+        boolean enginesReady = false;
+        int securityLevel = 5;
+        
+        int shieldStatus = 100;
+        
+        int mainPower;
+        System.out.println("Main Power: " + mainPower);
+        
+        int backupPower = 50;
+        
+        boolean commsOpen = true;
+        
+        System.out.println("System Status Report:");
+        System.out.println("System message: Critical Warning received.");
+        System.out.println("Using the /n character for a new line.");
+        
+        int systemId = 101;
+        systemId = 102;
+
+
+        // --- MODULE 2: MATH, CASTING & OVERFLOW (Errors 13-24) ---
+        System.out.println("\n[MODULE 2] Fuel and Cargo Math...");
+
+        double cargoWeight = 150.75;
+        int exactCargoWeight = (int)cargoWeight;
+        
+        int roundedCargo = (int) (8.9 + 0.5);
+        
+        double cargoDivision = 100 / 3;
+        
+        int leftoverCargo = 100 % 3;
+        
+        double multiplication = 5.0 * 2.0;
+        
+        int speed = 5000;
+        speed += 50;
+        
+        speed++;
+        
+        int counter = 0;
+        counter = counter + 1;
+        
+        int overload = Integer.MAX_VALUE + 1;
+        
+        int tempDrop = Integer.MIN_VALUE - 1;
+        
+        int parenthesisError = (10 + 5 / 2);
+        
+        int crash = 100 / 1;
+
+
+        // --- MODULE 3: THE MATH CLASS (Errors 25-32) ---
+        System.out.println("\n[MODULE 3] Navigation and Radar...");
+        
+        int a = 15;
+        int b = 2;
+        double average = (double)(a + b) / 2;
+        
+        double routeDeviation = Math.abs(-12.5);
+        
+        double coordinateSqrt = Math.sqrt(144.0);
+        
+        double enginePower = Math.pow(5.0, 3);
+        
+        double attackPower = Math.pow(2.0, 3.0);
+        
+        double randomNum = Math.random();
+        
+        int faultyRandom = (int) Math.random() * 50;
+        
+        int typeError = Math.abs(-5);
+
+        System.out.println("\n=== ALL SYSTEMS REPAIRED. STATION SAVED! ===");
+    }
+}
+</pre>
+
+<h3>Topics Practiced</h3>
+
+<p>
+    In this project, I practiced debugging Java code involving variable
+    declarations, data types, casting, integer and double division, the
+    modulo operator, increment operators, overflow, and methods such as
+    Math.abs(), Math.sqrt(), Math.pow(), and Math.random().
+</p>
+
+<h3>What I Learned</h3>
+
+<p>
+    I learned that small syntax and logic mistakes can cause a program to
+    behave incorrectly or not compile at all. I also became more familiar
+    with reading compiler errors and checking Java code line by line to
+    find problems.
+</p>
