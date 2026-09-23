@@ -190,6 +190,87 @@ turn()
 
     <hr>
 
+    <h2>September 24, 2026 - Unit 1 Review (Sections 1.10–1.11)</h2>
+
+    <p>
+        These notes summarize the Java topics I studied in sections 1.10 and 1.11.
+    </p>
+
+    <h3>1.10 - Class Methods</h3>
+
+    <p>
+        I learned how to use class methods in Java. Class methods are declared
+        using the static keyword and can be called without creating an object.
+        When a class method is located in another class, I can call it by using
+        the class name followed by a dot and the method name.
+    </p>
+
+    <pre>
+Example:
+
+Calculator.slope(1, 1, 5, 10);
+
+Hello.english(name);
+
+UnitConverter.milesToKilometers(65);
+    </pre>
+
+    <p>
+        I also learned that methods can have parameters and return values.
+        The arguments that are passed into a method are matched with the
+        parameters in the method definition. If a method returns a value,
+        that value can be stored in a variable.
+    </p>
+
+    <pre>
+public static double calculateTime(double acceleration, double distance)
+{
+    double time = Math.sqrt((2 * distance) / acceleration);
+    return time;
+}
+    </pre>
+
+    <h3>1.11 - Math Class and Random Numbers</h3>
+
+    <p>
+        I learned how to use methods from the Math class to perform mathematical
+        calculations. Some examples are Math.sqrt() for square roots,
+        Math.pow() for powers, Math.abs() for absolute value, and Math.PI
+        for the value of pi.
+    </p>
+
+    <pre>
+double squareRoot = Math.sqrt(144);
+double power = Math.pow(5, 3);
+double absolute = Math.abs(-20);
+double circleArea = Math.PI * Math.pow(5, 2);
+    </pre>
+
+    <p>
+        I also learned how Math.random() can be used to generate random numbers.
+        Math.random() creates a double value from 0.0 up to, but not including,
+        1.0. By multiplying, casting to an int, and adding a starting value,
+        I can create random integers in a specific range.
+    </p>
+
+    <pre>
+int diceRoll = (int)(Math.random() * 6) + 1;
+
+int randomNumber = (int)(Math.random() * 21) + 10;
+    </pre>
+
+    <h3>What I Learned</h3>
+
+    <p>
+        I learned how to call class methods from the same class and from other
+        classes. I also became more comfortable with parameters, arguments,
+        return values, and static methods. In addition, I learned how to use
+        the Math class for calculations and how to generate random integers
+        within a specific range.
+    </p>
+
+    <hr>
+
     <h2>September 21, 2026 - Project: Farmer Ryan</h2>
 
     <h3>Project Description</h3>
